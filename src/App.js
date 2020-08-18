@@ -34,9 +34,9 @@ const fakeAxiosPost = (url, { name, email, role }) => {
 }
 
 export default function App() {
-  const [members, setMembers] = useState([]) 
+  const [members, setMembers] = useState([])
   const [formValues, setFormValues] = useState(initialFormValues)
-  const updateForm = (inputName, inputValue) => { 
+  const updateForm = (inputName, inputValue) => {
     setFormValues({ ...formValues, [inputName]: inputValue })
   }
   const submitForm = () => {
